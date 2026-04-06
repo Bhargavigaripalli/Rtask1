@@ -18,14 +18,14 @@ function Task3() {
       name: "Shoes",
       category: "Fashion",
       image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
     },
     {
       id: 3,
       name: "Watch",
       category: "Accessories",
       image:
-    "https://jokerandwitch.com/cdn/shop/products/AMWW397_hand.jpg?v=1626184889&width=1080"
+        "https://jokerandwitch.com/cdn/shop/products/AMWW397_hand.jpg"
     },
     {
       id: 4,
@@ -43,29 +43,35 @@ function Task3() {
     }
   ]);
 
+  // ✅ Improved Search (name + category)
   const filteredProducts = products.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
+    item.name.toLowerCase().includes(search.toLowerCase()) ||
+    item.category.toLowerCase().includes(search.toLowerCase())
   );
 
+  // Remove item
   const removeItem = (id) => {
     setProducts(products.filter((item) => item.id !== id));
   };
 
   return (
     <div className="container">
-      <h1 className="title"> Product Dashboard</h1>
+      <h1 className="title">🛍 Product Dashboard</h1>
 
+      {/* Toggle Button */}
       <button className="btn" onClick={() => setShow(!show)}>
         {show ? "Hide Products" : "Show Products"}
       </button>
 
+      {/* Search */}
       <input
         type="text"
-        placeholder="Search product..."
+        placeholder="Search by name or category..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
 
+      {/* Conditional Rendering */}
       {show && (
         <div className="grid">
           {filteredProducts.length > 0 ? (
@@ -87,7 +93,7 @@ function Task3() {
               </div>
             ))
           ) : (
-            <h2 className="noData"> No Data Available</h2>
+            <h2 className="noData">🚫 No Matching Products</h2>
           )}
         </div>
       )}
