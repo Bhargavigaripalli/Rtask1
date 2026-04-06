@@ -42,8 +42,7 @@ function Task3() {
         "https://static.vecteezy.com/system/resources/thumbnails/020/221/141/small_2x/1514-blue-bag-isolated-on-a-transparent-background-photo.jpg"
     }
   ]);
-
-  // ✅ Improved Search (name + category)
+ 
   const filteredProducts = products.filter((item) =>
     item.name.toLowerCase().includes(search.toLowerCase()) ||
     item.category.toLowerCase().includes(search.toLowerCase())
@@ -56,7 +55,7 @@ function Task3() {
 
   return (
     <div className="container">
-      <h1 className="title">🛍 Product Dashboard</h1>
+      <h1 className="title">Product Dashboard</h1>
 
       {/* Toggle Button */}
       <button className="btn" onClick={() => setShow(!show)}>
@@ -93,7 +92,7 @@ function Task3() {
               </div>
             ))
           ) : (
-            <h2 className="noData">🚫 No Matching Products</h2>
+            <h2 className="noData"> No Matching Products</h2>
           )}
         </div>
       )}
