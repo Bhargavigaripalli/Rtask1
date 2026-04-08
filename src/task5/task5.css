@@ -1,0 +1,131 @@
+ 
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://thumbs.dreamstime.com/b/ai-assistant-monitors-secure-login-portal-system-ensures-all-user-authentication-attempts-verified-protecting-415528598.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*  Center Container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;         
+  overflow: hidden;     
+}
+
+/* Glass Card */
+.form-card {
+  width: 450px;          
+  padding: 20px;         
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+
+  height: 80vh;          
+  overflow-y: auto;     
+}
+
+/* Title */
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Labels */
+.form-card label {
+  font-size: 13px;
+  margin-top: 8px;
+  display: block;
+}
+
+/* Inputs */
+.form-card input,
+.form-card select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 13px;
+}
+
+ 
+.form-card select option {
+  color: black;
+  background: white;
+}
+
+/* Gender Row */
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin: 5px 0 10px 0;
+}
+
+/* Spacing */
+.spacing {
+  margin-top: 10px;
+}
+
+/* Error */
+.form-card span {
+  color: #ffd1d1;
+  font-size: 11px;
+}
+
+/* Button */
+.form-card button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #4333ba, #5537cd);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover */
+.form-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #5537cd;
+}
+
+/* Scrollbar Styling */
+.form-card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.form-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.form-card::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.form-card::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+ 
+@media (max-width: 500px) {
+  .form-card {
+    width: 90%;
+    height: 85vh;
+  }
+}
