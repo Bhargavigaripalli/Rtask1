@@ -42,10 +42,9 @@ function Task6() {
 
           <div className="dial">
 
-            {/* 🌈 Animated Ring */}
             <div className="glow-ring"></div>
 
-            {/* 🔄 Smooth Needle */}
+         
             <div
               className="needle"
               style={{
@@ -53,14 +52,13 @@ function Task6() {
               }}
             ></div>
 
-            {/* ⏱ Time */}
+             
             <div className="time-text">
               {formatTime(time)}
             </div>
 
           </div>
-
-          {/* 🎮 Buttons */}
+ 
           <div className="btn-container">
             <button className="btn start" onClick={() => setIsRunning(true)}>
               Start
@@ -80,7 +78,7 @@ function Task6() {
             </button>
           </div>
 
-          {/* 🏁 Lap List */}
+          {/*  Lap List */}
           <div className="lap-list">
             {laps.map((lap, index) => (
               <div key={index} className="lap-item">

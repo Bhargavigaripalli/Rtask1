@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* 🌌 Background */
+/*  Background */
 .app-container {
   height: 100vh;
   display: flex;
@@ -26,7 +26,7 @@
   background: rgba(0,0,0,0.6);
 }
 
-/* 📱 Glass Phone */
+/*  Glass Phone */
 .phone {
   width: 300px;
   height: 620px;
@@ -103,7 +103,7 @@
   border-radius: 50%;
 }
 
-/* 🌈 Rotating Ring */
+/*  Rotating Ring */
 .glow-ring {
   position: absolute;
   width: 100%;
@@ -131,7 +131,7 @@
   border-radius: 50%;
 }
 
-/* 🔄 Needle */
+/*  Needle */
 .needle {
   position: absolute;
   width: 3px;
