@@ -1,0 +1,206 @@
+ body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+}
+ 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #2c3e50;
+  color: white;
+}
+
+.logo {
+  color: #f9d423;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.links a.active {
+  color: #f9d423;
+}
+ 
+.home-container {
+  text-align: center;
+  padding: 30px;
+  color: #2c3e50;
+}
+
+.home-container h1 {
+  color: #2c3e50;
+}
+
+.home-text {
+  color: #333;
+}
+
+.home-img {
+  width: 55%;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+ 
+.section {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.section h1 {
+  color: #2c3e50;
+}
+ 
+.search {
+  padding: 10px;
+  width: 60%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+ 
+.tutor-card {
+  background: #ecf0f1;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.tutor-card:hover {
+  transform: translateY(-5px);
+}
+
+.tutor-card img {
+  width: 70px;
+  border-radius: 50%;
+}
+ 
+.rating {
+  color: orange;
+}
+ 
+button {
+  background: #ff4e50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.edit-btn {
+  background: #3498db;
+}
+
+.save-btn {
+  background: #27ae60;
+}
+ 
+.booking input {
+  margin: 10px;
+  padding: 8px;
+}
+ 
+.success {
+  color: green;
+}
+ 
+.contact-box {
+  margin-top: 15px;
+  color: #2c3e50;
+}
+ 
+.profile-card {
+  width: 280px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-card img {
+  width: 100px;
+}
+
+.profile-card input {
+  display: block;
+  width: 80%;
+  margin: 8px auto;
+  padding: 8px;
+}
+ 
+.fade-in {
+  animation: fade 0.6s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 20px;
+}
+ 
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-img {
+    width: 90%;
+  }
+
+  .search {
+    width: 90%;
+  }
+}
+/* Contact Card */
+.contact-card {
+  width: 320px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(133, 217, 236);
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.contact-card p {
+  margin: 8px 0;
+  color: #333;
+}
