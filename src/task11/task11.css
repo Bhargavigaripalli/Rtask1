@@ -1,0 +1,140 @@
+ 
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #eef2ff, #e0f2fe);
+}
+ 
+ 
+ .container {
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: url("https://png.pngtree.com/thumb_back/fh260/background/20240919/pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg");
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+}
+ 
+.top-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.top-header h1 {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+ 
+.top-header input {
+  padding: 12px 20px;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+ 
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+   
+}
+
+ 
+.card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+ 
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+ 
+}
+
+ 
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+ 
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+ 
+.card-front {
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  padding: 10px;
+}
+ 
+.card-back {
+  background: linear-gradient(135deg, hsl(240, 38%, 97%), #dbdfe6);
+  color: white;
+  transform: rotateY(180deg);
+  padding: 15px;
+}
+ 
+.card-front img {
+  width: 100px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+ 
+.details-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 420px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.details-card h1 {
+  color: #0d0d0d;
+  font-weight: 700;
+  
+}
+
+.details-card p {
+  text-align: left;
+}
+ 
+.back-btn {
+  margin-bottom: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #6565dd, #7d97c2);
+  color: white;
+  cursor: pointer;
+}
+ 
+.loading {
+  margin-top: 100px;
+}
