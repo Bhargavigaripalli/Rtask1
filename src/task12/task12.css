@@ -1,0 +1,103 @@
+ body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/powerpoint-whatsapp-chat-app-background-design-template-2cb44957f5cfcf79f6918ab4b60b04c9_screen.jpg?ts=1698696084");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ 
+.chat-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ 
+.chat-box {
+  width: 380px;
+  height: 600px;
+  background: #e0e2e1;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+ 
+.chat-title {
+  text-align: center;
+  padding: 15px;
+  background: #075e54;
+  color: white;
+  margin: 0;
+}
+ 
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+ 
+.chat-bubble {
+  max-width: 70%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+ 
+.right {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+ 
+.left {
+  background: white;
+  align-self: flex-start;
+}
+ 
+.ticks {
+  font-size: 12px;
+  margin-left: 8px;
+  color: gray;
+}
+ 
+.blue {
+  color: #34b7f1;
+}
+ 
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.chat-input-area button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  background: #25d366;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.chat-input-area button:hover {
+  background: #20bd5a;
+}
+.green {
+  color: green;
+}
