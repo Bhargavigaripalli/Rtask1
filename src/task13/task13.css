@@ -1,0 +1,140 @@
+ 
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(-45deg, #ff4e50, #fc913a, #f9d423, #24c6dc);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+ 
+.task13-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+ 
+.title {
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+ 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+}
+ 
+.user-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+ 
+.user-card::before {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+  top: -50%;
+  left: -50%;
+  transform: rotate(25deg);
+  transition: 0.5s;
+}
+
+.user-card:hover::before {
+  left: 100%;
+}
+ 
+.user-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+ 
+.card-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-header span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+ 
+.card-body {
+  margin-top: 12px;
+}
+
+.card-body p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+ 
+.status {
+  margin-top: 100px;
+  color: #fff;
+  font-size: 22px;
+}
+
+.error {
+  color: #ffd6d6;
+}
+ 
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffffff, #ffd6a5);
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+ 
+.extra {
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+ 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.expand-text {
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: right;
+}
+ 
+.user-card.expanded {
+  transform: scale(1.04);
+  border: 1px solid rgba(255,255,255,0.5);
+}
